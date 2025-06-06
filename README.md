@@ -38,38 +38,27 @@ This project leverages **SQL** to analyze and visualize Retail Sales data . It a
 
 
 ## 📊 Data Model Schema
-The dataset consists of one primary sales table with fields:
-
-order_id (PK)
-
-cust_id
-
-gender
-
-date
-
-status (Completed/Cancelled/Returned)
-
-channel (Online/B2B)
-
-sku, category, size
-
-qty, amount
-
-ship_city, ship_state, ship_postal_code, ship_country
-
-discount, b2b flag
-
-Entity relationships:
-
-One customer → many orders
-
-One order → one/many products (based on SKU and quantity)
-
-One order → one shipping record
-
-(Refer to the ERD image or schema diagram if included)
-
+CREATE TABLE vrinda_sales (
+    order_id            VARCHAR(50)      NOT NULL,
+    cust_id             VARCHAR(50)      NOT NULL,
+    gender              VARCHAR(10),      
+    age                 INT,             
+    date                DATE,             
+    status              VARCHAR(20),      
+    channel             VARCHAR(20),    
+    sku                 VARCHAR(50),      
+    category            VARCHAR(100),     
+    size                VARCHAR(10),      
+    qty                 FLOAT,           
+    currency            VARCHAR(10),      
+    amount              FLOAT,                    
+    ship_city           VARCHAR(100),     
+    ship_state          VARCHAR(100),     
+    ship_postal_code    VARCHAR(20),      
+    ship_country        VARCHAR(100),     
+    b2b                 VARCHAR(5),       
+    CONSTRAINT pk_order PRIMARY KEY (order_id, sku)
+);
 📌 Key Insights & Recommendations
 Sales peak during festival seasons and weekends.
 
@@ -111,8 +100,19 @@ For full conclusions, see the /insights_summary.md or presentation deck.
 ---
 
 ## 📈 Snapshots
+![image](https://github.com/user-attachments/assets/94fbb1f6-07dd-40fa-b4ab-7a737791c40e)
 
-![alt text](image-1.png)
+![image](https://github.com/user-attachments/assets/9294c330-207d-4261-b55e-87827556e39c)
+
+![image](https://github.com/user-attachments/assets/b9253a55-0154-4c23-b8f1-abcd89e285e3)
+
+![image](https://github.com/user-attachments/assets/92729817-e613-4c05-b6f5-e2521bfadaad)
+
+![image](https://github.com/user-attachments/assets/ee752a66-04cf-4806-991f-94fc94e1d414)
+
+
+
+
 
 
 ---
