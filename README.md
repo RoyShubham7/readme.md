@@ -1,1 +1,1 @@
-##Vrinda Retail Sales Data Analysis - SQL
+#  Vrinda Retail Sales Data Analysis - SQL
