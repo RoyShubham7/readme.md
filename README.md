@@ -110,13 +110,8 @@ For full conclusions, see the /insights_summary.md or presentation deck.
 
 ![image](https://github.com/user-attachments/assets/ee752a66-04cf-4806-991f-94fc94e1d414)
 
-
-
-
-
-
 ---
 
-<!-- ## Conclusion
+ ## Conclusion
 
 The project was successful in answering the set of questions about the store's business performance. The results of the project can be used by the store to make decisions about its marketing and product offerings.
