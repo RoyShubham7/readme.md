@@ -59,19 +59,6 @@ CREATE TABLE vrinda_sales (
     b2b                 VARCHAR(5),       
     CONSTRAINT pk_order PRIMARY KEY (order_id, sku)
 );
-📌 Key Insights & Recommendations
-Sales peak during festival seasons and weekends.
-
-80% of revenue comes from 20% of products (Pareto insight).
-
-Repeat buyers spend significantly more than new customers.
-
-Products with high discounts tend to have higher return rates.
-
-Shipping performance varies significantly by region.
-
-For full conclusions, see the /insights_summary.md or presentation deck.
-
 
 ## 📚 How to Run
 - Import the dataset into SQL Server using SSMS or import wizard.
